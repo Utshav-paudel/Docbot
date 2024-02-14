@@ -1,0 +1,6 @@
+langchain
+Chroma
+streamlit
+llama-cpp-python
+sentence_transformers
+unstructured[all-docs]

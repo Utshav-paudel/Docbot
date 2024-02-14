@@ -25,8 +25,9 @@ def file_to_vdb(FILE_DIRECTORY,embeddings):
 
 def generate_resonse(llm,vdb,query):
     #@ creating template and loading llm
-    template = """Question: {query}
+    template = """Question: {query}\n
 
+    
     Answer : """
     prompt = PromptTemplate(template=template, input_variables=["query"])
     retriever = vdb.as_retriever()
